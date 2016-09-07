@@ -24,3 +24,7 @@ echo "User:" $i "now has the password:" $randompw
 echo "User:" $i "now has the password:" $randompw  >> passwords.txt
 done
 
+# The following will generate an encrypted file to store the passwords
+echo "Generating an encrypted file for passwords.txt..."
+gpg -c passwords.txt
+echo "passwords.txt.gpg now holds an encrypted file with all the users passwords."
