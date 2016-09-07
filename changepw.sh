@@ -7,7 +7,7 @@ echo
 # The following cat command will list all users that have credentials to log in
 echo "List of all Users"
 cat /etc/passwd|grep '/home'|cut -d: -f1
-#Printing list of all users to a txt file called users, located on the desktop
+#Printing list of all users to a txt file called users
 cat /etc/passwd|grep '/home'|cut -d: -f1 > users.txt
 
 #Reading from the list users.txt and assigning the users random passwords of length 8
